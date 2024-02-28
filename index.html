@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pink.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>峡谷Webpage</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <br>
+    <header>
+      <a href="./public/pink.svg" id="logo">logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="./src/images/stars.png" alt="" id="stars" />
+      <img src="./src/images/moon.png" alt="" id="moon" />
+      <img
+        src="./src/images/mountains_behind.png"
+        alt=""
+        id="mountains_behind"
+      />
+      <div id="text">Moon Light</div>
+      <a href="#" id="btn">探索</a>
+      <img src="./src/images/mountains_front.png" alt="" id="mountains_front" />
+    </section>
+    <div class="article">
+      <h2>If I were to live the life twice</h2>
+    
+       <p> If I were to live the life twice.I would like to be a tree.Standing in
+        the dust firmly,without happiness and sadness.A half of my body will be
+        sleeping in the earth peacefully.A half of my body will be dancing with
+        the wind joyfully.A half of my body will be providing green shade for
+        passers-by willingly.A half of my body will be bathing in the sunshine
+        warmly.So quiet and proud will I be.that I will not have to depend on
+        anyone, searching for anything.
+        If I were to live the life twice.I would like to be a tree.Standing in
+        the dust firmly,without happiness and sadness.A half of my body will be
+        sleeping in the earth peacefully.A half of my body will be dancing with
+        the wind joyfully.A half of my body will be providing green shade for
+        passers-by willingly.A half of my body will be bathing in the sunshine
+        warmly.So quiet and proud will I be.that I will not have to depend on
+        anyone, searching for anything.
+      </br>
+        If I were to live the life twice.I would like to be a tree.Standing in
+        the dust firmly,without happiness and sadness.A half of my body will be
+        sleeping in the earth peacefully.A half of my body will be dancing with
+        the wind joyfully.A half of my body will be providing green shade for
+        passers-by willingly.A half of my body will be bathing in the sunshine
+        warmly.So quiet and proud will I be.that I will not have to depend on
+        anyone, searching for anything.
+        If I were to live the life twice.I would like to be a tree.Standing in
+        the dust firmly,without happiness and sadness.A half of my body will be
+        sleeping in the earth peacefully.A half of my body will be dancing with
+        the wind joyfully.A half of my body will be providing green shade for
+        passers-by willingly.A half of my body will be bathing in the sunshine
+        warmly.So quiet and proud will I be.that I will not have to depend on
+        anyone, searching for anything.</br>
+        If I were to live the life twice.I would like to be a tree.Standing in
+        the dust firmly,without happiness and sadness.A half of my body will be
+        sleeping in the earth peacefully.A half of my body will be dancing with
+        the wind joyfully.A half of my body will be providing green shade for
+        passers-by willingly.A half of my body will be bathing in the sunshine
+        warmly.So quiet and proud will I be.that I will not have to depend on
+        anyone, searching for anything.
+        If I were to live the life twice.I would like to be a tree.Standing in
+        the dust firmly,without happiness and sadness.A half of my body will be
+        sleeping in the earth peacefully.A half of my body will be dancing with
+        the wind joyfully.A half of my body will be providing green shade for
+        passers-by willingly.A half of my body will be bathing in the sunshine
+        warmly.So quiet and proud will I be.that I will not have to depend on
+        anyone, searching for anything.</br>
+        If I were to live the life twice.I would
+        like to be a tree.Standing in the dust firmly,without happiness and
+        sadness.A half of my body will be sleeping in the earth peacefully.A
+        half of my body will be dancing with the wind joyfully.A half of my body
+        will be providing green shade for passers-by willingly.A half of my body
+        will be bathing in the sunshine warmly.So quiet and proud will I be.that
+        I will not have to depend on anyone, searching for anything.If I were to live the life twice.I would
+        like to be a tree.Standing in the dust firmly,without happiness and
+        sadness.A half of my body will be sleeping in the earth peacefully.A
+        half of my body will be dancing with the wind joyfully.A half of my body
+        will be providing green shade for passers-by willingly.A half of my body
+        will be bathing in the sunshine warmly.So quiet and proud will I be.that
+        I will not have to depend on anyone, searching for anything.</p>
+    </div>
+    </div>
+  </body>
+  <script>
+    // 首先定义了一个名为$的函数，这个函数接收一个参数id，然后返回对应ID的DOM元素。使用这些常量来操作对应的DOM元素
+    function $(id){
+      return document.getElementById(id);
+    }
+    const stars= $('stars');
+    const moon= $('moon');
+    const mountains_behind= $('mountains_behind');
+    const text= $('text');
+    const btn= $('btn');
+    const mountains_front= $('mountains_front');
+
+    // 给窗口添加鼠标滚动事件
+    window.addEventListener('scroll',function (){
+      let value=window.scrollY;
+     stars.style.left=value*0.25+'px';
+    moon.style.top=value*1.2+'px';
+    mountains_behind.style.top=value*0.5+'px';
+    text.style.marginRight=value*1.5+'px';
+   btn.style.marginRight=value*1.5+'px';
+
+    })
+ 
+
+  </script>
+</html>
